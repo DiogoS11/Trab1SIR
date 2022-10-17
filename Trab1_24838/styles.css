@@ -1,0 +1,73 @@
+.fotoPessoal{
+    height: 400px;
+    float: left;
+    padding: 15px;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(10, 63, 60), rgb(8, 60, 85));
+}
+
+.div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.titulo{
+    color: rgb(255, 255, 255)
+}
+
+.texto{
+    color: rgb(156, 172, 195)
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 10%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(250, 251, 246, 0.966);
+    margin: 8px;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+  
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+}
+  
+.button:hover {
+    background-color: #555;
+}
+  
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+}
